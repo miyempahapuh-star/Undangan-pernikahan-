@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan Ami &amp; Gyuri</title>
+<meta name="description" content="Undangan pernikahan digital Ami dan Gyuri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f8f4ec;--paper:#fffdf8;--sage:#777e6d;--sage-dark:#535c4e;--ink:#33382f;--gold:#b8a47d;--muted:#77766c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Montserrat',sans-serif;font-size:14px;line-height:1.8}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7e0d3}.nav-inner{max-width:1120px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Great Vibes',cursive;font-size:29px;white-space:nowrap}.brand span{color:var(--sage)}.nav-links{display:flex;gap:23px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.nav-links a:hover{color:var(--sage)}
+.hero{min-height:590px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(248,244,236,.70),rgba(248,244,236,.25)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,253,248,.65);pointer-events:none}.hero-content{position:relative;z-index:1;max-width:680px;padding:70px 24px}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase}.hero h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(66px,10vw,112px);line-height:1.03;margin:18px 0 12px;color:#42493e}.amp{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);display:block;margin:-2px 0}.hero p{max-width:440px;margin:22px auto 28px;font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.45}.btn{display:inline-block;border:1px solid var(--sage-dark);background:var(--sage-dark);color:white;border-radius:30px;padding:11px 25px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.2s}.btn:hover{background:transparent;color:var(--sage-dark)}.btn-outline{background:transparent;color:var(--sage-dark)}
+.section{padding:82px 22px}.wrap{max-width:1080px;margin:auto}.section-title{text-align:center;margin:0 0 12px;font-family:'Great Vibes',cursive;font-weight:400;font-size:48px;line-height:1.2}.ornament{text-align:center;color:var(--gold);font-size:21px;margin-bottom:32px}.intro{display:grid;grid-template-columns:1fr 1.35fr 1fr;align-items:center;gap:34px}.intro-copy{text-align:center}.intro-copy p{font-family:'Cormorant Garamond',serif;font-size:19px}.couple{display:grid;grid-template-columns:1fr 1fr;gap:24px;text-align:center;position:relative}.person img{width:150px;height:150px;object-fit:cover;border-radius:50%;border:5px solid var(--paper);box-shadow:0 0 0 1px #d8ceba}.person h3{font-family:'Great Vibes',cursive;font-size:37px;font-weight:400;margin:12px 0 0}.person p{font-family:'Cormorant Garamond',serif;font-size:16px;margin:4px 0}.quote{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;text-align:center}
+.details{background:var(--sage);color:#fffdf5;position:relative;overflow:hidden}.details:before,.details:after{content:"❀";position:absolute;font-size:150px;color:rgba(255,255,255,.10);top:8px}.details:before{left:12px}.details:after{right:12px}.details .ornament{color:#e6d7b6}.event-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:38px}.event{padding:10px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.35)}.event:last-child{border:0}.event .symbol{font-size:29px;color:#ead9b5}.event h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;margin:8px 0}.event p{font-size:12px;line-height:1.9;margin:0}.map-button{display:table;margin:30px auto 0;border-color:#f6f0df;color:#fffdf5}.map-button:hover{color:var(--sage-dark);background:#fffdf5}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.story-photo{min-height:360px;background:url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80') center/cover;border-radius:180px 180px 8px 8px}.story-text p{font-family:'Cormorant Garamond',serif;font-size:21px}
+.gallery{background:#f0e9dd}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-grid img{width:100%;height:290px;object-fit:cover;border-radius:4px;transition:transform .3s}.gallery-grid img:hover{transform:translateY(-4px)}
+.rsvp-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.rsvp-copy p{font-family:'Cormorant Garamond',serif;font-size:20px}.form-card{background:var(--paper);padding:28px;border:1px solid #e8e0d2;box-shadow:0 12px 35px rgba(68,58,42,.06);border-radius:10px}.form-card label{display:block;font-size:11px;letter-spacing:.07em;text-transform:uppercase;margin:0 0 6px}.form-card input,.form-card select,.form-card textarea{width:100%;border:1px solid #ded7ca;background:#fffefa;padding:12px 13px;border-radius:5px;margin-bottom:15px;color:var(--ink)}.form-card textarea{min-height:95px;resize:vertical}.form-card .btn{width:100%}.notice{font-size:12px;color:var(--muted);margin-top:12px}.thanks{background:#e9e3d6;text-align:center;padding:52px 22px}.thanks h2{font-family:'Great Vibes',cursive;font-size:48px;font-weight:400;margin:0}.thanks p{font-family:'Cormorant Garamond',serif;font-size:19px}.footer{background:#4e5749;color:#f9f5eb;text-align:center;padding:20px;font-size:11px;letter-spacing:.08em}
+@media(max-width:800px){.nav-inner{flex-direction:column;gap:4px}.nav-links{gap:12px;flex-wrap:wrap;justify-content:center;font-size:9px}.hero{min-height:520px}.intro{grid-template-columns:1fr}.quote{max-width:500px;margin:auto}.event-grid{grid-template-columns:1fr 1fr}.event:nth-child(2){border-right:0}.event:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:22px}.event:nth-child(n+3){padding-top:22px}.story,.rsvp-grid{grid-template-columns:1fr}.story-photo{min-height:300px;order:2}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img{height:220px}.section{padding:62px 18px}}
+@media(max-width:460px){.nav-links{gap:9px}.nav-links a{font-size:8px}.hero{min-height:480px}.hero p{font-size:18px}.section-title{font-size:42px}.couple{gap:10px}.person img{width:120px;height:120px}.event{padding-left:7px;padding-right:7px}.event h3{font-size:18px}.gallery-grid{gap:9px}.gallery-grid img{height:170px}.form-card{padding:20px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="nav-inner">
+<a class="brand" href="#home">♡ <span>Ami &amp; Gyuri</span></a>
+<nav class="nav-links" aria-label="Navigasi utama">
+<a href="#home">Home</a><a href="#tentang">Tentang Kami</a><a href="#acara">Detail Acara</a><a href="#galeri">Galeri</a><a href="#rsvp">RSVP</a>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="hero-content">
+<div class="eyebrow">Undangan Pernikahan</div>
+<h1>Ami <span class="amp">&amp;</span> Gyuri</h1>
+<p>Dengan penuh kebahagiaan, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami.</p>
+<a class="btn" href="#tentang">Lihat Undangan ↓</a>
+</div></section>
+<section class="section" id="tentang"><div class="wrap">
+<h2 class="section-title">Tentang Kami</h2><div class="ornament">— ♡ —</div>
+<div class="intro">
+<div class="intro-copy"><p>Dua hati yang dipertemukan oleh takdir, kini melangkah bersama menuju perjalanan baru.</p><span>❧</span></div>
+<div class="couple">
+<div class="person"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Foto ilustrasi mempelai Ami"><h3>Ami</h3><p>Putra dari Bapak ...<br>dan Ibu ...</p></div>
+<div class="person"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Foto ilustrasi mempelai Gyuri"><h3>Gyuri</h3><p>Putri dari Bapak ...<br>dan Ibu ...</p></div>
+</div>
+<div class="quote">“Bersama, kita bukan hanya menyatukan dua jiwa, tetapi juga dua cerita yang menjadi satu.”</div>
+</div></div></section>
+<section class="section details" id="acara"><div class="wrap">
+<h2 class="section-title">Detail Acara</h2><div class="ornament">— ♡ —</div>
+<div class="event-grid">
+<div class="event"><div class="symbol">♧</div><h3>Akad Nikah</h3><p>Sabtu, 20 Desember 2026<br>08.00 WIB</p></div>
+<div class="event"><div class="symbol">⌖</div><h3>Lokasi Akad</h3><p>Masjid Al-Ikhlas<br>Jl. Mawar No. 12, Sukabumi</p></div>
+<div class="event"><div class="symbol">♧</div><h3>Resepsi</h3><p>Sabtu, 20 Desember 2026<br>11.00 WIB – selesai</p></div>
+<div class="event"><div class="symbol">⌖</div><h3>Lokasi Resepsi</h3><p>Gedung Sari Asih<br>Jl. Merdeka No. 45, Sukabumi</p></div>
+</div>
+<a class="btn btn-outline map-button" href="https://maps.google.com/?q=Sukabumi" target="_blank" rel="noopener">⌖ Lihat Peta Lokasi</a>
+</div></section>
+<section class="section"><div class="wrap story">
+<div class="story-photo" role="img" aria-label="Dekorasi pernikahan bernuansa romantis"></div>
+<div class="story-text"><h2 class="section-title">Kisah Kami</h2><div class="ornament">— ♡ —</div>
+<p>Setiap pertemuan memiliki cerita. Dengan rasa syukur dan doa dari orang-orang terkasih, kami memilih untuk menulis bab baru bersama, dalam cinta, komitmen, dan kebahagiaan.</p>
+<p>Merupakan kehormatan bagi kami apabila Anda berkenan hadir dan memberikan doa restu.</p></div>
+</div></section>
+<section class="section gallery" id="galeri"><div class="wrap">
+<h2 class="section-title">Galeri</h2><div class="ornament">— ♡ —</div>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Dekorasi pernikahan">
+<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80" alt="Buket bunga pernikahan">
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Momen pernikahan">
+</div></div></section>
+<section class="section" id="rsvp"><div class="wrap rsvp-grid">
+<div class="rsvp-copy"><h2 class="section-title">Konfirmasi Kehadiran</h2><div class="ornament">— ♡ —</div>
+<p>Kehadiran dan doa restu Anda adalah kebahagiaan bagi kami. Silakan isi formulir untuk mengirim ucapan dan konfirmasi kehadiran.</p><p><strong>Terima kasih</strong> telah menjadi bagian dari cerita kami.</p></div>
+<form class="form-card" id="rsvpForm">
+<label for="nama">Nama lengkap</label><input id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+<label for="hadir">Konfirmasi kehadiran</label><select id="hadir" name="hadir" required><option value="">Pilih jawaban</option><option>Insyaallah hadir</option><option>Maaf, belum bisa hadir</option></select>
+<label for="ucapan">Ucapan / doa</label><textarea id="ucapan" name="ucapan" placeholder="Tuliskan ucapan untuk Ami & Gyuri..."></textarea>
+<button class="btn" type="submit">Kirim Konfirmasi ♡</button>
+<div class="notice">Demo tugas sekolah: formulir ini menampilkan pesan di browser dan belum menyimpan data ke server.</div>
+</form>
+</div></section>
+<section class="thanks"><h2>Terima Kasih</h2><p>Merupakan kebahagiaan bagi kami untuk berbagi hari istimewa ini dengan Anda.</p><div>♡ &nbsp; Ami &amp; Gyuri &nbsp; ♡</div></section>
+</main>
+<footer class="footer">© 2026 Ami &amp; Gyuri · Dibuat dengan penuh cinta ♡</footer>
+<script>
+document.getElementById('rsvpForm').addEventListener('submit', function(event){
+  event.preventDefault();
+  const nama = document.getElementById('nama').value.trim();
+  const hadir = document.getElementById('hadir').value;
+  if(!nama || !hadir) return;
+  alert('Terima kasih, ' + nama + '! Konfirmasi kamu: ' + hadir + '.\\nIni masih demo website untuk tugas sekolah.');
+  this.reset();
+});
+</script>
+</body>
+</html>
